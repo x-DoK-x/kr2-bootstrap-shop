@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Крафт: украшения и декор с фильтрами по размеру, цене и материалу.">
+  <title>Крафт — Творчество</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 m-2 bg-white rounded" href="#main">К содержимому</a>
+<header class="site-head sticky-top" id="top">
+  <div class="site-head__band position-relative overflow-hidden">
+    <a class="site-head__logo" href="index.html">
+      <img src="images/site logo.jpg" alt="Логотип творческой студии">
+      <img class="site-head__logo-inverse" src="images/site logo inverse.jpg" alt="" aria-hidden="true">
+    </a>
+    <div class="site-head__panel" id="price-menu-panel">
+      <ul class="site-head__price list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-0"><li><a href="art.html">Арт-искусство</a></li><li><a href="merch.html">Мерч</a></li><li><a href="craft.html">Крафт</a></li><li><a href="animation.html">Анимации</a></li><li><a href="design.html">Дизайн</a></li><li><a href="photo.html">Фотография</a></li></ul>
+    </div>
+    <div class="site-head__cover">
+      <button class="site-head__title" type="button" aria-haspopup="true" aria-controls="price-menu-panel">Прайс-лист</button>
+    </div>
+  </div>
+  <nav class="site-head__nav" aria-label="Навигация по сайту">
+    <a class="site-head__link" href="index.html">Главная</a><a class="site-head__link" href="catalog.html">Каталог услуг</a><a class="site-head__link" href="order.html">Заказ</a><a class="site-head__link" href="original.html">Ориджин</a><a class="site-head__link" href="contacts.html">Соцсети</a>
+  </nav>
+</header>
+<main id="main" class="flex-grow-1">
+<section class="py-5" id="craft-app">
+  <div class="container">
+    <nav aria-label="Хлебные крошки"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active" aria-current="page">Крафт</li></ol></nav>
+    <h1 class="display-6 fw-bold">Крафт</h1>
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <fieldset>
+          <legend class="h6">Размер</legend>
+          
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-size" id="craft-size-all" value="all" checked>
+      <label class="form-check-label" for="craft-size-all">Любой</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-size" id="craft-size-s" value="s">
+      <label class="form-check-label" for="craft-size-s">S</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-size" id="craft-size-m" value="m">
+      <label class="form-check-label" for="craft-size-m">M</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-size" id="craft-size-l" value="l">
+      <label class="form-check-label" for="craft-size-l">L</label>
+    </div>
+        </fieldset>
+      </div>
+      <div class="col-md-4">
+        <fieldset>
+          <legend class="h6">Цена</legend>
+          
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-price" id="craft-price-all" value="all" checked>
+      <label class="form-check-label" for="craft-price-all">Любая</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-price" id="craft-price-low" value="low">
+      <label class="form-check-label" for="craft-price-low">до 2 000 ₽</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-price" id="craft-price-mid" value="mid">
+      <label class="form-check-label" for="craft-price-mid">2 000–25 000 ₽</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-price" id="craft-price-high" value="high">
+      <label class="form-check-label" for="craft-price-high">от 25 000 ₽</label>
+    </div>
+        </fieldset>
+      </div>
+      <div class="col-md-4">
+        <fieldset>
+          <legend class="h6">Материалы</legend>
+          
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-material" id="craft-mat-all" value="all" checked>
+      <label class="form-check-label" for="craft-mat-all">Любые</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-material" id="craft-mat-low" value="low">
+      <label class="form-check-label" for="craft-mat-low">низкий</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-material" id="craft-mat-medium" value="medium">
+      <label class="form-check-label" for="craft-mat-medium">средний</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="craft-material" id="craft-mat-high" value="high">
+      <label class="form-check-label" for="craft-mat-high">высокий</label>
+    </div>
+        </fieldset>
+      </div>
+    </div>
+    <div class="alert alert-warning d-none" id="craft-empty" role="status">Нет работ с такими фильтрами.</div>
+    <div class="row g-3">
+    <div class="col-sm-6 col-lg-4" data-craft data-size="m" data-price="mid" data-material="medium">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-1.jpg" alt="Серьги «Пион»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Серьги «Пион»</span>
+          <span class="text-muted-brand">2 500 ₽ · средний материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="s" data-price="low" data-material="low">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-2.jpg" alt="Кольцо «Космос»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Кольцо «Космос»</span>
+          <span class="text-muted-brand">1 800 ₽ · низкий материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="m" data-price="mid" data-material="medium">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-3.jpg" alt="Брошь «Кот»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Брошь «Кот»</span>
+          <span class="text-muted-brand">4 200 ₽ · средний материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="l" data-price="mid" data-material="medium">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-4.jpg" alt="Комплект «Сад»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Комплект «Сад»</span>
+          <span class="text-muted-brand">12 000 ₽ · средний материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="l" data-price="high" data-material="high">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-5.jpg" alt="Арт-объект «Цветение»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Арт-объект «Цветение»</span>
+          <span class="text-muted-brand">30 000 ₽ · высокий материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="m" data-price="mid" data-material="medium">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-6.jpg" alt="Подвеска «Луна»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Подвеска «Луна»</span>
+          <span class="text-muted-brand">6 500 ₽ · средний материал</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-lg-4" data-craft data-size="s" data-price="low" data-material="low">
+      <figure class="card h-100 mb-0">
+        <img class="card-img-top cover-img" src="images/Craft/craft-7.jpg" alt="Значок «Кот»">
+        <figcaption class="card-body">
+          <span class="d-block fw-semibold">Значок «Кот»</span>
+          <span class="text-muted-brand">900 ₽ · низкий материал</span>
+        </figcaption>
+      </figure>
+    </div></div>
+  </div>
+</section></main>
+
+<footer class="mt-auto">
+  <div class="bg-brand text-cream py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">Творческая студия «Творчество» · учебный проект</p>
+      <nav class="d-flex flex-wrap gap-3" aria-label="Навигация в подвале"><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html">Главная</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#advantages">Преимущества</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#popular">Популярные</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#contacts">Контакты</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="catalog.html">Каталог услуг</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="order.html">Заказ</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="contacts.html">Соцсети</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="original.html">Ориджин</a></nav>
+      <p class="mb-0">Широбокова Д. Д., ЭФБО-16-25</p>
+    </div>
+  </div>
+  <div class="bg-support py-5" id="support">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <h2 class="h3">Тех. поддержка</h2>
+          <p class="text-muted-brand mb-0">Если сайт работает некорректно, напишите сразу — ответим в течение рабочего дня.</p>
+        </div>
+        <div class="col-lg-7">
+          <form class="card card-body" method="post" action="#">
+            <h3 class="h5">Написать в поддержку</h3>
+            <div class="mb-3">
+              <label class="form-label" for="support-name">ФИО</label>
+              <input class="form-control" id="support-name" type="text" name="support-name" placeholder="Фамилия Имя Отчество" autocomplete="name" required>
+              <div class="invalid-feedback">Укажите ФИО.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-email">Почта</label>
+              <input class="form-control" id="support-email" type="email" name="support-email" placeholder="you@example.ru" autocomplete="email" required>
+              <div class="invalid-feedback">Укажите корректную почту.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-message">Сообщение</label>
+              <textarea class="form-control" id="support-message" name="support-message" rows="4" placeholder="Что случилось"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <p class="form-text mb-0">Учебная форма: данные не отправляются на сервер.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="scroll-controls position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2">
+  <a class="btn btn-primary rounded-circle" href="#main" aria-label="К началу содержимого">↑</a>
+  <a class="btn btn-outline-primary bg-white rounded-circle" href="#top" aria-label="В начало страницы">⤒</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

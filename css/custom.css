@@ -1,0 +1,645 @@
+/* «Творчество» — Bootstrap-вариант. Палитра КР №1: #FFF8E7, #930500, #95BBEA. */
+
+:root {
+  --bs-primary: #930500;
+  --bs-primary-rgb: 147, 5, 0;
+  --bs-secondary: #95bbea;
+  --bs-secondary-rgb: 149, 187, 234;
+  --bs-body-bg: #fff8e7;
+  --bs-body-color: #3b0b08;
+  --bs-body-font-family: "Segoe UI", Arial, sans-serif;
+  --bs-link-color: #930500;
+  --bs-link-hover-color: #5f8fce;
+  --bs-border-color: #eadfcf;
+  --bs-emphasis-color: #3b0b08;
+  --brand-blue: #95bbea;
+  --brand-cream: #fff8e7;
+  --brand-ink: #3b0b08;
+  --brand-muted: #7a5a56;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 9.5rem;
+}
+
+.site-head__band {
+  background-color: #930500;
+  height: 88px;
+  transition: background-color 0.35s ease;
+}
+
+.site-head__band:hover,
+.site-head__band:focus-within {
+  background-color: #95bbea;
+}
+
+.site-head__logo {
+  display: block;
+  height: 44px;
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  z-index: 3;
+}
+
+.site-head__logo img {
+  border: 2px solid #930500;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.site-head__logo-inverse {
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.site-head__band:hover .site-head__logo-inverse,
+.site-head__band:focus-within .site-head__logo-inverse {
+  opacity: 1;
+}
+
+.site-head__cover {
+  align-items: center;
+  background-color: #930500;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.site-head__band:hover .site-head__cover,
+.site-head__band:focus-within .site-head__cover {
+  transform: translateY(-100%);
+}
+
+.site-head__panel {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 12px 72px;
+  position: absolute;
+  z-index: 1;
+}
+
+.site-head__title {
+  background: none;
+  border: 0;
+  color: #fff8e7;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px;
+}
+
+.site-head__title:focus-visible {
+  border-radius: 6px;
+  outline: 3px solid #95bbea;
+  outline-offset: 4px;
+}
+
+.site-head__price {
+  gap: 6px 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.site-head__price a {
+  color: #fff8e7;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-head__band:hover .site-head__price a,
+.site-head__band:focus-within .site-head__price a {
+  color: #930500;
+}
+
+.site-head__price a:hover,
+.site-head__price a:focus-visible {
+  text-decoration: underline;
+}
+
+.site-head__nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 48px;
+  padding: 6px 24px;
+}
+
+.site-head__link {
+  align-items: center;
+  color: #930500;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.site-head__link + .site-head__link::before {
+  background-color: #5f8fce;
+  border-radius: 50%;
+  content: "";
+  height: 5px;
+  margin-right: 10px;
+  width: 5px;
+}
+
+.site-head__link:hover,
+.site-head__link:focus-visible {
+  color: #5f8fce;
+}
+
+.site-head__link[aria-current="page"] {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .site-head__title {
+    font-size: 22px;
+  }
+
+  .site-head__price {
+    gap: 6px 18px;
+  }
+
+  .site-head__price a {
+    font-size: 13px;
+  }
+
+  .site-head__nav {
+    padding: 6px 16px;
+  }
+
+  .site-head__link {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .site-head__logo {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-head__title {
+    font-size: 19px;
+  }
+
+  .site-head__price {
+    gap: 4px 12px;
+  }
+
+  .site-head__price a {
+    font-size: 12px;
+  }
+
+  .site-head__link {
+    font-size: 12px;
+    padding: 3px 7px;
+  }
+
+  .site-head__logo {
+    height: 36px;
+    left: 12px;
+    width: 36px;
+  }
+}
+
+body {
+  color: var(--brand-ink);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff8e7;
+  --bs-btn-bg: #930500;
+  --bs-btn-border-color: #930500;
+  --bs-btn-hover-color: #fff8e7;
+  --bs-btn-hover-bg: #6e0400;
+  --bs-btn-hover-border-color: #6e0400;
+  --bs-btn-active-color: #fff8e7;
+  --bs-btn-active-bg: #6e0400;
+  --bs-btn-active-border-color: #6e0400;
+  --bs-btn-disabled-color: #fff8e7;
+  --bs-btn-disabled-bg: #930500;
+  --bs-btn-disabled-border-color: #930500;
+  --bs-btn-focus-shadow-rgb: 147, 5, 0;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #930500;
+  --bs-btn-border-color: #930500;
+  --bs-btn-hover-color: #fff8e7;
+  --bs-btn-hover-bg: #930500;
+  --bs-btn-hover-border-color: #930500;
+  --bs-btn-active-color: #fff8e7;
+  --bs-btn-active-bg: #6e0400;
+  --bs-btn-active-border-color: #6e0400;
+  --bs-btn-focus-shadow-rgb: 147, 5, 0;
+}
+
+.btn-light {
+  --bs-btn-color: #930500;
+  --bs-btn-bg: #fff8e7;
+  --bs-btn-border-color: #fff8e7;
+  --bs-btn-hover-color: #6e0400;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+}
+
+.bg-brand {
+  background-color: #930500 !important;
+}
+
+.text-cream {
+  color: #fff8e7 !important;
+}
+
+.text-muted-brand {
+  color: var(--brand-muted) !important;
+}
+
+.bg-support {
+  background-color: #f3e6cf;
+}
+
+.navbar.bg-brand .nav-link {
+  color: rgba(255, 248, 231, 0.88);
+  font-weight: 600;
+}
+
+.navbar.bg-brand .nav-link:hover,
+.navbar.bg-brand .nav-link:focus {
+  color: #ffffff;
+}
+
+.navbar.bg-brand .nav-link.active {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+}
+
+.navbar-brand img {
+  border: 2px solid #fff8e7;
+  border-radius: 50%;
+  height: 48px;
+  object-fit: cover;
+  width: 48px;
+}
+
+.card {
+  border: 0;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(147, 5, 0, 0.08);
+}
+
+.card-img-top,
+.strip-img,
+.hero-slide,
+.collage-img,
+.choice-card img {
+  object-fit: cover;
+}
+
+.cover-img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero {
+  background:
+    linear-gradient(115deg, rgba(147, 5, 0, 0.92), rgba(95, 143, 206, 0.72)),
+    url("../images/Art/background-1.jpg") center/cover;
+}
+
+.hero-slide {
+  height: 420px;
+}
+
+.strip {
+  scrollbar-color: #930500 transparent;
+}
+
+.strip-img {
+  flex: 0 0 auto;
+  height: 280px;
+  width: 220px;
+}
+
+.choice-card {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.choice-card img {
+  height: 140px;
+  width: 100%;
+}
+
+.choice-wrap {
+  position: relative;
+}
+
+.catalog-check {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.catalog-check:focus-visible + .choice-card {
+  outline: 3px solid #95bbea;
+  outline-offset: 3px;
+}
+
+.catalog-check:checked + .choice-card {
+  outline: 3px solid #930500;
+  outline-offset: 3px;
+}
+
+.catalog-check:checked + .choice-card::after {
+  align-items: center;
+  background: #930500;
+  border-radius: 50%;
+  color: #fff8e7;
+  content: "✓";
+  display: flex;
+  font-weight: 700;
+  height: 1.6rem;
+  justify-content: center;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+  width: 1.6rem;
+}
+
+.form-control,
+.form-select {
+  background-color: #fffdf8;
+  border-color: #eadfcf;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #ffffff;
+  border-color: #95bbea;
+  box-shadow: 0 0 0 0.25rem rgba(149, 187, 234, 0.35);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff8e7;
+  box-shadow: none;
+  color: #930500;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(149, 187, 234, 0.45);
+}
+
+.swatch {
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+.swatch-red { background: #930500; }
+.swatch-blue { background: #5f8fce; }
+.swatch-cream { background: #fff8e7; border: 1px solid #c9b79a; }
+.swatch-green { background: #2f6b3a; }
+
+.social-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-card:hover {
+  color: #930500;
+}
+
+.social-icon {
+  align-items: center;
+  background: #930500;
+  border-radius: 0.85rem;
+  color: #fff8e7;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 2.6rem;
+  justify-content: center;
+  width: 2.6rem;
+}
+
+.scroll-controls {
+  z-index: 1030;
+}
+
+.scroll-controls .btn {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.origin-thumb {
+  height: 72px;
+  object-fit: cover;
+  width: 72px;
+}
+
+.about-panel {
+  background:
+    linear-gradient(90deg, rgba(255, 248, 231, 0.94), rgba(255, 248, 231, 0.88)),
+    url("../images/Art/traditional-sketch.jpg") center/cover;
+}
+
+.list-group-item:target {
+  outline: 3px solid #930500;
+  outline-offset: 2px;
+}
+
+.breadcrumb a {
+  color: #930500;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #930500;
+  --bs-nav-pills-link-active-color: #fff8e7;
+}
+
+.nav-pills .nav-link {
+  color: #930500;
+  font-weight: 600;
+}
+
+.form-check-input:checked {
+  background-color: #930500;
+  border-color: #930500;
+}
+
+.form-check-input:focus {
+  border-color: #95bbea;
+  box-shadow: 0 0 0 0.25rem rgba(149, 187, 234, 0.35);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #930500;
+  color: #fff8e7;
+}
+
+.btn-check:checked + .btn-outline-primary {
+  background-color: #930500;
+  border-color: #930500;
+  color: #fff8e7;
+}
+
+@media (max-width: 575.98px) {
+  .hero-slide,
+  .strip-img {
+    height: 220px;
+  }
+}
+
+/* Фильтры без своего JS: чекбоксы и радиокнопки прячут карточки через :has(). */
+
+#catalog-app:not(:has(#cat-art:checked)) [data-group="art"],
+#catalog-app:not(:has(#cat-art:checked)) [data-unique="art"],
+#catalog-app:not(:has(#cat-photo:checked)) [data-group="photo"],
+#catalog-app:not(:has(#cat-photo:checked)) [data-unique="photo"],
+#catalog-app:not(:has(#cat-design:checked)) [data-group="design"],
+#catalog-app:not(:has(#cat-design:checked)) [data-unique="design"],
+#catalog-app:not(:has(#cat-merch:checked)) [data-group="merch"],
+#catalog-app:not(:has(#cat-merch:checked)) [data-unique="merch"],
+#catalog-app:not(:has(#cat-craft:checked)) [data-group="craft"],
+#catalog-app:not(:has(#cat-craft:checked)) [data-unique="craft"],
+#catalog-app:not(:has(#cat-animation:checked)) [data-group="animation"],
+#catalog-app:not(:has(#cat-animation:checked)) [data-unique="animation"] {
+  display: none;
+}
+
+#catalog-app:has(#price-low:checked) [data-product]:not([data-price="low"]),
+#catalog-app:has(#price-mid:checked) [data-product]:not([data-price="mid"]),
+#catalog-app:has(#price-high:checked) [data-product]:not([data-price="high"]),
+#catalog-app:has(#size-s:checked) [data-product]:not([data-size="s"]),
+#catalog-app:has(#size-m:checked) [data-product]:not([data-size="m"]),
+#catalog-app:has(#size-l:checked) [data-product]:not([data-size="l"]),
+#catalog-app:has(#color-red:checked) [data-product]:not([data-color~="red"]),
+#catalog-app:has(#color-blue:checked) [data-product]:not([data-color~="blue"]),
+#catalog-app:has(#color-cream:checked) [data-product]:not([data-color~="cream"]),
+#catalog-app:has(#color-green:checked) [data-product]:not([data-color~="green"]),
+#catalog-app:has(#art-tech-painting:checked) [data-product][data-cat="art"]:not([data-tag="painting"]),
+#catalog-app:has(#art-tech-graphic:checked) [data-product][data-cat="art"]:not([data-tag="graphic"]),
+#catalog-app:has(#art-tech-digital:checked) [data-product][data-cat="art"]:not([data-tag="digital"]),
+#catalog-app:has(#photo-genre-portrait:checked) [data-product][data-cat="photo"]:not([data-tag="portrait"]),
+#catalog-app:has(#photo-genre-family:checked) [data-product][data-cat="photo"]:not([data-tag="family"]),
+#catalog-app:has(#photo-genre-wedding:checked) [data-product][data-cat="photo"]:not([data-tag="wedding"]),
+#catalog-app:has(#photo-genre-animals:checked) [data-product][data-cat="photo"]:not([data-tag="animals"]),
+#catalog-app:has(#design-type-web:checked) [data-product][data-cat="design"]:not([data-tag="web"]),
+#catalog-app:has(#design-type-graphic:checked) [data-product][data-cat="design"]:not([data-tag="graphic"]),
+#catalog-app:has(#design-type-motion:checked) [data-product][data-cat="design"]:not([data-tag="motion"]),
+#catalog-app:has(#merch-type-brelok:checked) [data-product][data-cat="merch"]:not([data-tag="brelok"]),
+#catalog-app:has(#merch-type-sticker:checked) [data-product][data-cat="merch"]:not([data-tag="sticker"]),
+#catalog-app:has(#merch-type-print:checked) [data-product][data-cat="merch"]:not([data-tag="print"]),
+#catalog-app:has(#merch-type-accessory:checked) [data-product][data-cat="merch"]:not([data-tag="accessory"]),
+#catalog-app:has(#craft-material-low:checked) [data-product][data-cat="craft"]:not([data-tag="low"]),
+#catalog-app:has(#craft-material-medium:checked) [data-product][data-cat="craft"]:not([data-tag="medium"]),
+#catalog-app:has(#craft-material-high:checked) [data-product][data-cat="craft"]:not([data-tag="high"]),
+#catalog-app:has(#anim-type-zastavka:checked) [data-product][data-cat="animation"]:not([data-tag="zastavka"]),
+#catalog-app:has(#anim-type-clip:checked) [data-product][data-cat="animation"]:not([data-tag="clip"]) {
+  display: none;
+}
+
+#catalog-app:not(:has(#cat-art:checked)) label[for="cat-art"][data-cat-chip],
+#catalog-app:not(:has(#cat-art:checked)) label[for="cat-art"][data-cat-chip]:hover,
+#catalog-app:not(:has(#cat-photo:checked)) label[for="cat-photo"][data-cat-chip],
+#catalog-app:not(:has(#cat-photo:checked)) label[for="cat-photo"][data-cat-chip]:hover,
+#catalog-app:not(:has(#cat-design:checked)) label[for="cat-design"][data-cat-chip],
+#catalog-app:not(:has(#cat-design:checked)) label[for="cat-design"][data-cat-chip]:hover,
+#catalog-app:not(:has(#cat-merch:checked)) label[for="cat-merch"][data-cat-chip],
+#catalog-app:not(:has(#cat-merch:checked)) label[for="cat-merch"][data-cat-chip]:hover,
+#catalog-app:not(:has(#cat-craft:checked)) label[for="cat-craft"][data-cat-chip],
+#catalog-app:not(:has(#cat-craft:checked)) label[for="cat-craft"][data-cat-chip]:hover,
+#catalog-app:not(:has(#cat-animation:checked)) label[for="cat-animation"][data-cat-chip],
+#catalog-app:not(:has(#cat-animation:checked)) label[for="cat-animation"][data-cat-chip]:hover {
+  background-color: transparent;
+  border-color: #930500;
+  color: #930500;
+}
+
+#craft-app:has(#craft-size-s:checked) [data-craft]:not([data-size="s"]),
+#craft-app:has(#craft-size-m:checked) [data-craft]:not([data-size="m"]),
+#craft-app:has(#craft-size-l:checked) [data-craft]:not([data-size="l"]),
+#craft-app:has(#craft-price-low:checked) [data-craft]:not([data-price="low"]),
+#craft-app:has(#craft-price-mid:checked) [data-craft]:not([data-price="mid"]),
+#craft-app:has(#craft-price-high:checked) [data-craft]:not([data-price="high"]),
+#craft-app:has(#craft-mat-low:checked) [data-craft]:not([data-material="low"]),
+#craft-app:has(#craft-mat-medium:checked) [data-craft]:not([data-material="medium"]),
+#craft-app:has(#craft-mat-high:checked) [data-craft]:not([data-material="high"]) {
+  display: none;
+}
+
+.origin-drop {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.list-group-item:has(.origin-drop:checked) > :not(.origin-remove) {
+  display: none !important;
+}
+
+.list-group-item:has(.origin-drop:checked) .origin-remove {
+  font-size: 0;
+}
+
+.list-group-item:has(.origin-drop:checked) .origin-remove::after {
+  content: "Вернуть";
+  font-size: 1rem;
+}
+
+.catalog-empty {
+  display: none;
+}
+
+#catalog-app:not(:has(#cat-art:checked, #cat-photo:checked, #cat-design:checked, #cat-merch:checked, #cat-craft:checked, #cat-animation:checked)) .catalog-empty {
+  display: block;
+}
+
+#catalog-app:has(#cat-art:checked, #cat-photo:checked, #cat-design:checked, #cat-merch:checked, #cat-craft:checked, #cat-animation:checked) .unique-filter-empty {
+  display: none;
+}
+
+#photo-app:has(#photo-individual:checked) [data-photo]:not([data-genre="individual"]),
+#photo-app:has(#photo-family:checked) [data-photo]:not([data-genre="family"]),
+#photo-app:has(#photo-wedding:checked) [data-photo]:not([data-genre="wedding"]),
+#photo-app:has(#photo-animals:checked) [data-photo]:not([data-genre="animals"]) {
+  display: none;
+}

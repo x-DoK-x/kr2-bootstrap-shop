@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Творческая студия «Творчество»: арт-искусство, мерч, крафт, анимации, дизайн и фотография. Примеры работ, цены и заявка.">
+  <title>Каталог услуг «Творчество»</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 m-2 bg-white rounded" href="#main">К содержимому</a>
+<header class="site-head sticky-top" id="top">
+  <div class="site-head__band position-relative overflow-hidden">
+    <a class="site-head__logo" href="index.html">
+      <img src="images/site logo.jpg" alt="Логотип творческой студии">
+      <img class="site-head__logo-inverse" src="images/site logo inverse.jpg" alt="" aria-hidden="true">
+    </a>
+    <div class="site-head__panel" id="price-menu-panel">
+      <ul class="site-head__price list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-0"><li><a href="art.html">Арт-искусство</a></li><li><a href="merch.html">Мерч</a></li><li><a href="craft.html">Крафт</a></li><li><a href="animation.html">Анимации</a></li><li><a href="design.html">Дизайн</a></li><li><a href="photo.html">Фотография</a></li></ul>
+    </div>
+    <div class="site-head__cover">
+      <button class="site-head__title" type="button" aria-haspopup="true" aria-controls="price-menu-panel">Прайс-лист</button>
+    </div>
+  </div>
+  <nav class="site-head__nav" aria-label="Навигация по сайту">
+    <a class="site-head__link" href="index.html" aria-current="page">Главная</a><a class="site-head__link" href="catalog.html">Каталог услуг</a><a class="site-head__link" href="order.html">Заказ</a><a class="site-head__link" href="original.html">Ориджин</a><a class="site-head__link" href="contacts.html">Соцсети</a>
+  </nav>
+</header>
+<main id="main" class="flex-grow-1">
+<section class="hero text-cream py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <p class="text-uppercase small fw-semibold mb-2">Творческая студия</p>
+        <h1 class="display-4 fw-bold">«Творчество»</h1>
+        <p class="lead">Арт-искусство, мерч, крафт, анимации, дизайн и фотография. Здесь собраны примеры работ автора и прайс-лист услуг.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-light" href="catalog.html">Смотреть каталог</a>
+          <a class="btn btn-outline-light" href="order.html">Оставить заказ</a>
+        </div>
+        <a class="d-inline-block mt-3 link-light" href="original.html">Купить оригинальные работы</a>
+      </div>
+      <div class="col-lg-6">
+        <div id="heroCarousel" class="carousel slide carousel-fade rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Слайд 4"></button></div>
+          <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 hero-slide" src="images/Art/traditional-full.jpg" alt="Живопись студии">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 hero-slide" src="images/Art/digital-full.jpg" alt="Цифровая иллюстрация">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 hero-slide" src="images/Art/background-1.jpg" alt="Фон для сцены">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 hero-slide" src="images/Art/traditional-sketch.jpg" alt="Графический набросок">
+    </div></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5" id="advantages">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-4">Отвечаем за качество!</h2>
+    <div class="row g-3">
+    <div class="col-sm-6 col-lg-3">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h5">Авторские работы</h3>
+          <p class="mb-0">Каждая вещь делается вручную и не повторяется.</p>
+          
+        </div>
+      </article>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h5">Прозрачные цены</h3>
+          <p class="mb-0">Стоимость видна до начала работы.</p>
+          <p class="small text-muted-brand mb-0 mt-2">*не учитывая правки</p>
+        </div>
+      </article>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h5">Работа по брифу</h3>
+          <p class="mb-0">Обсуждаем идею, сроки и правки.</p>
+          
+        </div>
+      </article>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h5">Доставка по России</h3>
+          <p class="mb-0">Отправляем бережно и с трек-номером.</p>
+          
+        </div>
+      </article>
+    </div></div>
+  </div>
+</section>
+<section class="py-5" id="popular">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-2">Популярные работы</h2>
+    <p class="lead text-muted-brand">Три работы, которые чаще всего берут в заказ.</p>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="position-relative">
+            <span class="badge text-bg-primary position-absolute top-0 start-0 m-2">Хит</span>
+            <a href="products/portret-maki.html"><img class="card-img-top cover-img" src="images/Art/traditional-full.jpg" alt="Портрет с маками"></a>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5"><a class="text-decoration-none" href="products/portret-maki.html">Портрет с маками</a></h3>
+            <p class="text-muted-brand">Живопись с цветами и тёплым светом, формат для интерьера.</p>
+            <p class="fw-bold mt-auto mb-3">4 500 ₽</p>
+            <a class="btn btn-primary btn-sm align-self-start" href="products/portret-maki.html">Подробнее</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="position-relative">
+            <span class="badge text-bg-secondary position-absolute top-0 start-0 m-2">Новинка</span>
+            <a href="products/nochnoy-gorod.html"><img class="card-img-top cover-img" src="images/Art/digital-full.jpg" alt="Ночной город"></a>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5"><a class="text-decoration-none" href="products/nochnoy-gorod.html">Ночной город</a></h3>
+            <p class="text-muted-brand">Цифровая иллюстрация ночного города, крупный формат.</p>
+            <p class="fw-bold mt-auto mb-3">18 000 ₽</p>
+            <a class="btn btn-primary btn-sm align-self-start" href="products/nochnoy-gorod.html">Подробнее</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="position-relative">
+            <span class="badge text-bg-primary position-absolute top-0 start-0 m-2">Скидка</span>
+            <a href="products/nabrosok-tush.html"><img class="card-img-top cover-img" src="images/Art/traditional-sketch.jpg" alt="Набросок тушью"></a>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5"><a class="text-decoration-none" href="products/nabrosok-tush.html">Набросок тушью</a></h3>
+            <p class="text-muted-brand">Графический набросок: быстрый эскиз или подарочный лист.</p>
+            <p class="fw-bold mt-auto mb-3">3 200 ₽</p>
+            <a class="btn btn-primary btn-sm align-self-start" href="products/nabrosok-tush.html">Подробнее</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-white" id="directions">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-2">Каталог</h2>
+    <p class="lead text-muted-brand">Выберите направление — внутри примеры работ и цены.</p>
+    
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: арт-искусство"><img class="rounded-4 strip-img" src="images/Art/traditional-full.jpg" alt="Арт-искусство"><img class="rounded-4 strip-img" src="images/Art/digital-full.jpg" alt=""><img class="rounded-4 strip-img" src="images/Art/traditional-sketch.jpg" alt=""><img class="rounded-4 strip-img" src="images/Art/digital-sketch.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Арт-искусство</h3>
+          <p class="text-muted-brand">Живопись, графика и иллюстрация</p>
+          <a class="btn btn-primary" href="art.html">Смотреть направление →</a>
+        </div>
+      </article>
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6 order-md-2">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: мерч"><img class="rounded-4 strip-img" src="images/Merch/breloki.jpg" alt="Мерч"><img class="rounded-4 strip-img" src="images/Merch/tshirt.jpg" alt=""><img class="rounded-4 strip-img" src="images/Merch/pins.jpg" alt=""><img class="rounded-4 strip-img" src="images/Merch/cap.jpg" alt=""><img class="rounded-4 strip-img" src="images/Merch/notebook.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Мерч</h3>
+          <p class="text-muted-brand">Брелоки, стикеры, типография, аксессуары</p>
+          <a class="btn btn-primary" href="merch.html">Смотреть направление →</a>
+        </div>
+      </article>
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: крафт"><img class="rounded-4 strip-img" src="images/Craft/craft-1.jpg" alt="Крафт"><img class="rounded-4 strip-img" src="images/Craft/craft-2.jpg" alt=""><img class="rounded-4 strip-img" src="images/Craft/craft-4.jpg" alt=""><img class="rounded-4 strip-img" src="images/Craft/craft-6.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Крафт</h3>
+          <p class="text-muted-brand">Украшения и декор ручной работы</p>
+          <a class="btn btn-primary" href="craft.html">Смотреть направление →</a>
+        </div>
+      </article>
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6 order-md-2">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: анимации"><img class="rounded-4 strip-img" src="images/Animation/anim-1.jpg" alt="Анимации"><img class="rounded-4 strip-img" src="images/Animation/anim-2.jpg" alt=""><img class="rounded-4 strip-img" src="images/Animation/anim-3.jpg" alt=""><img class="rounded-4 strip-img" src="images/Animation/anim-5.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Анимации</h3>
+          <p class="text-muted-brand">Пиксельная анимация и клипы</p>
+          <a class="btn btn-primary" href="animation.html">Смотреть направление →</a>
+        </div>
+      </article>
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: дизайн"><img class="rounded-4 strip-img" src="images/Design/web-1.jpg" alt="Дизайн"><img class="rounded-4 strip-img" src="images/Design/graphic-1.jpg" alt=""><img class="rounded-4 strip-img" src="images/Design/logo-1.jpg" alt=""><img class="rounded-4 strip-img" src="images/Design/web-2.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Дизайн</h3>
+          <p class="text-muted-brand">Веб, графика и моушен</p>
+          <a class="btn btn-primary" href="design.html">Смотреть направление →</a>
+        </div>
+      </article>
+      <article class="row align-items-center g-4 py-4">
+        <div class="col-md-6 order-md-2">
+          <div class="d-flex gap-2 overflow-auto pb-2 strip" tabindex="0" aria-label="Коллаж: фотография"><img class="rounded-4 strip-img" src="images/Foto/photo-1.jpg" alt="Фотография"><img class="rounded-4 strip-img" src="images/Foto/photo-5.jpg" alt=""><img class="rounded-4 strip-img" src="images/Foto/photo-9.jpg" alt=""><img class="rounded-4 strip-img" src="images/Foto/photo-6.jpg" alt=""></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h2">Фотография</h3>
+          <p class="text-muted-brand">Съёмка, ретушь и коллажи</p>
+          <a class="btn btn-primary" href="photo.html">Смотреть направление →</a>
+        </div>
+      </article>
+  </div>
+</section>
+<section class="py-5" id="about">
+  <div class="container">
+    <div class="about-panel card">
+      <div class="card-body p-4 p-md-5">
+        <h2 class="display-6 fw-bold">Об авторе</h2>
+        <p class="mb-0 lead">Творческая страница автора, где собраны все примеры его работ и подробный прайс-лист услуг. Здесь вы можете ознакомиться с портфолио, узнать о направлениях деятельности и связаться с автором для заказа индивидуального проекта.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5" id="contacts">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-4">Контакты</h2>
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="card-body">
+            <h3 class="h5">Телефон</h3>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="card-body">
+            <h3 class="h5">Почта</h3>
+            <a href="mailto:hello@tvorchestvo.ru">hello@tvorchestvo.ru</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card h-100">
+          <div class="card-body">
+            <h3 class="h5">Адрес</h3>
+            <p class="mb-0">Москва, учебная студия «Творчество»</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a class="btn btn-primary" href="order.html">Оставить заказ</a>
+      <a class="btn btn-outline-primary" href="contacts.html">Соцсети</a>
+    </div>
+  </div>
+</section></main>
+
+<footer class="mt-auto">
+  <div class="bg-brand text-cream py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">Творческая студия «Творчество» · учебный проект</p>
+      <nav class="d-flex flex-wrap gap-3" aria-label="Навигация в подвале"><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html">Главная</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#advantages">Преимущества</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#popular">Популярные</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="index.html#contacts">Контакты</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="catalog.html">Каталог услуг</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="order.html">Заказ</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="contacts.html">Соцсети</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="original.html">Ориджин</a></nav>
+      <p class="mb-0">Широбокова Д. Д., ЭФБО-16-25</p>
+    </div>
+  </div>
+  <div class="bg-support py-5" id="support">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <h2 class="h3">Тех. поддержка</h2>
+          <p class="text-muted-brand mb-0">Если сайт работает некорректно, напишите сразу — ответим в течение рабочего дня.</p>
+        </div>
+        <div class="col-lg-7">
+          <form class="card card-body" method="post" action="#">
+            <h3 class="h5">Написать в поддержку</h3>
+            <div class="mb-3">
+              <label class="form-label" for="support-name">ФИО</label>
+              <input class="form-control" id="support-name" type="text" name="support-name" placeholder="Фамилия Имя Отчество" autocomplete="name" required>
+              <div class="invalid-feedback">Укажите ФИО.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-email">Почта</label>
+              <input class="form-control" id="support-email" type="email" name="support-email" placeholder="you@example.ru" autocomplete="email" required>
+              <div class="invalid-feedback">Укажите корректную почту.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-message">Сообщение</label>
+              <textarea class="form-control" id="support-message" name="support-message" rows="4" placeholder="Что случилось"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <p class="form-text mb-0">Учебная форма: данные не отправляются на сервер.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="scroll-controls position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2">
+  <a class="btn btn-primary rounded-circle" href="#main" aria-label="К началу содержимого">↑</a>
+  <a class="btn btn-outline-primary bg-white rounded-circle" href="#top" aria-label="В начало страницы">⤒</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

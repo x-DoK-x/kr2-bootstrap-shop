@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Значки: описание, характеристики и заказ.">
+  <title>Значки — Творчество</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 m-2 bg-white rounded" href="#main">К содержимому</a>
+<header class="site-head sticky-top" id="top">
+  <div class="site-head__band position-relative overflow-hidden">
+    <a class="site-head__logo" href="../index.html">
+      <img src="../images/site logo.jpg" alt="Логотип творческой студии">
+      <img class="site-head__logo-inverse" src="../images/site logo inverse.jpg" alt="" aria-hidden="true">
+    </a>
+    <div class="site-head__panel" id="price-menu-panel">
+      <ul class="site-head__price list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-0"><li><a href="../art.html">Арт-искусство</a></li><li><a href="../merch.html">Мерч</a></li><li><a href="../craft.html">Крафт</a></li><li><a href="../animation.html">Анимации</a></li><li><a href="../design.html">Дизайн</a></li><li><a href="../photo.html">Фотография</a></li></ul>
+    </div>
+    <div class="site-head__cover">
+      <button class="site-head__title" type="button" aria-haspopup="true" aria-controls="price-menu-panel">Прайс-лист</button>
+    </div>
+  </div>
+  <nav class="site-head__nav" aria-label="Навигация по сайту">
+    <a class="site-head__link" href="../index.html">Главная</a><a class="site-head__link" href="../catalog.html" aria-current="page">Каталог услуг</a><a class="site-head__link" href="../order.html">Заказ</a><a class="site-head__link" href="../original.html">Ориджин</a><a class="site-head__link" href="../contacts.html">Соцсети</a>
+  </nav>
+</header>
+<main id="main" class="flex-grow-1">
+<section class="py-5">
+  <div class="container">
+    <nav aria-label="Хлебные крошки"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Главная</a></li><li class="breadcrumb-item"><a href="../catalog.html">Каталог услуг</a></li><li class="breadcrumb-item active" aria-current="page">Значки</li></ol></nav>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded-4 shadow-sm w-100" src="../images/Merch/pins.jpg" alt="Значки">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-6 fw-bold">Значки</h1>
+        <p class="fs-3 fw-bold">600 ₽</p>
+        <p class="">Металлические значки с красной эмалью.</p><p class="text-muted-brand">Мерч · аксессуар · S · красный</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+        <a class="btn btn-primary" href="../order.html">Оформить заказ</a>
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#quickOrder">Быстрый заказ</button>
+      </div>
+      <div class="modal fade" id="quickOrder" tabindex="-1" aria-labelledby="quickOrderTitle" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="quickOrderTitle">Быстрый заказ</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <form action="../thanks.html" method="get">
+              <div class="modal-body">
+                <p>Оставьте имя и телефон — свяжемся, чтобы подтвердить заказ «Значки».</p>
+                <input type="hidden" name="work" value="Значки">
+                <div class="mb-3">
+                  <label class="form-label" for="quick-name">Имя</label>
+                  <input class="form-control" id="quick-name" type="text" name="name" autocomplete="name" required>
+                  <div class="invalid-feedback">Укажите имя.</div>
+                </div>
+                <div class="mb-0">
+                  <label class="form-label" for="quick-phone">Телефон</label>
+                  <input class="form-control" id="quick-phone" type="tel" name="phone" autocomplete="tel" pattern="\+?[0-9\s\-()]{10,18}" required>
+                  <div class="invalid-feedback">Укажите телефон: от 10 цифр.</div>
+                </div>
+                <p class="form-text mt-3 mb-0">Учебная форма: после отправки откроется страница благодарности.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Отправить заказ</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        <table class="table table-striped align-middle bg-white rounded overflow-hidden">
+          <caption class="caption-top fw-semibold text-body">Характеристики</caption>
+          <tbody><tr><th class="w-25" scope="row">Вид</th><td>аксессуар</td></tr><tr><th class="w-25" scope="row">Размер</th><td>S</td></tr><tr><th class="w-25" scope="row">Цвет</th><td>красный</td></tr><tr><th class="w-25" scope="row">Срок</th><td>5 дней</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section></main>
+
+<footer class="mt-auto">
+  <div class="bg-brand text-cream py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">Творческая студия «Творчество» · учебный проект</p>
+      <nav class="d-flex flex-wrap gap-3" aria-label="Навигация в подвале"><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../index.html">Главная</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../index.html#advantages">Преимущества</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../index.html#popular">Популярные</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../index.html#contacts">Контакты</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../catalog.html">Каталог услуг</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../order.html">Заказ</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../contacts.html">Соцсети</a><a class="link-light link-underline-opacity-50 link-underline-opacity-100-hover" href="../original.html">Ориджин</a></nav>
+      <p class="mb-0">Широбокова Д. Д., ЭФБО-16-25</p>
+    </div>
+  </div>
+  <div class="bg-support py-5" id="support">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <h2 class="h3">Тех. поддержка</h2>
+          <p class="text-muted-brand mb-0">Если сайт работает некорректно, напишите сразу — ответим в течение рабочего дня.</p>
+        </div>
+        <div class="col-lg-7">
+          <form class="card card-body" method="post" action="#">
+            <h3 class="h5">Написать в поддержку</h3>
+            <div class="mb-3">
+              <label class="form-label" for="support-name">ФИО</label>
+              <input class="form-control" id="support-name" type="text" name="support-name" placeholder="Фамилия Имя Отчество" autocomplete="name" required>
+              <div class="invalid-feedback">Укажите ФИО.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-email">Почта</label>
+              <input class="form-control" id="support-email" type="email" name="support-email" placeholder="you@example.ru" autocomplete="email" required>
+              <div class="invalid-feedback">Укажите корректную почту.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="support-message">Сообщение</label>
+              <textarea class="form-control" id="support-message" name="support-message" rows="4" placeholder="Что случилось"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <p class="form-text mb-0">Учебная форма: данные не отправляются на сервер.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="scroll-controls position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2">
+  <a class="btn btn-primary rounded-circle" href="#main" aria-label="К началу содержимого">↑</a>
+  <a class="btn btn-outline-primary bg-white rounded-circle" href="#top" aria-label="В начало страницы">⤒</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
